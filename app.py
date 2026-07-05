@@ -37,10 +37,10 @@ def get_cookie():
         driver = webdriver.Chrome(service=service, options=options)
 
         try:
-            driver.get("https://monsite.com/")
+            driver.get("https://5afterdark.mom/")
             time.sleep(2)
 
-            driver.get("https://monsite.com/test/")
+            driver.get("https://5afterdark.mom/video/7e4de128-b10f-dc2b-0542-7590c441630e")
             time.sleep(3)
 
             for cookie in driver.get_cookies():
