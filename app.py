@@ -30,7 +30,11 @@ def get_cookie():
 
         service = Service(
             "/usr/bin/chromedriver",
-            service_args=["--verbose"],
+            service_args=[
+                "--verbose",
+                "--allowed-origins=*",
+                "--allowed-ips="
+            ],
             log_output=log_path
         )
 
