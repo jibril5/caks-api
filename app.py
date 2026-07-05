@@ -27,7 +27,7 @@ def get_cookie():
         options.add_argument("--disable-software-rasterizer")
         options.add_argument("--window-size=1920,1080")
         options.add_argument(f"--user-data-dir={tempfile.mkdtemp()}")
-
+        options.add_argument("--remote-debugging-pipe")
         service = Service(
             "/usr/bin/chromedriver",
             service_args=[
